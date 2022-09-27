@@ -1,0 +1,43 @@
+body {
+    background-color: #010001;
+    font-family: 'Fredoka', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.estilo1 {
+    background-color: #68A357;
+    padding: 40px;
+}
+
+.estilo2 {
+    background-color: white;
+    padding: 40px;
+}
+
+#miFoto {
+    border-radius: 50%;
+    height: 250px;
+    margin: 40px auto;
+}
+
+#portfolio img {
+    border-radius: 15px;
+    border: 3px solid #68A357;
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+}
+
+#portfolio {
+    text-align: center;
+    padding: 30px;
+}
+
+#acercaDeMi p {
+    text-align: right;
+}

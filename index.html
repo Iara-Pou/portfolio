@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Iara Pou</title>
+  <link rel="shortcut icon" href="./imagenes/1651793966.ico">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/estiloPortfolio.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img src="./imagenes/1651793966.ico" atl="icono hoja"> IARA POU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio" aria-current="page">Portfolio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#acercaDeMi">Acerca de mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactoForm">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mx-auto">
+    <header>
+      <div id="encabezado" class="estilo1 text-center">
+        <img id="miFoto" src="./imagenes/fotoPrevisoria.jpg" alt="foto mía">
+        <h1>Iara Pou</h1>
+        <h3>Diseñadora gráfica y desarrolladora front-end <br><i>(en proceso)</i></h3>
+      </div>
+    </header>
+    <main>
+      <div id="portfolio" class="estilo2">
+        <div class="row">
+          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><a href="https://integrador-codoacodo-iara-pou.netlify.app/"
+            target="_blank"><img src="./imagenes/codoAcodo.jpg" alt="codo a codo integrador"></a></div>
+          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><a href="https://color-game-iara.netlify.app"
+              target="_blank"><img src="./imagenes/colorGame.jpg" alt="color game"></a></div>
+          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><a href="https://to-do-list-iara.netlify.app"
+              target="_blank"><img src="./imagenes/toDoList.jpg" alt="to do list"></a></div>
+          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><a href="https://weather-channel-iara.netlify.app"
+              target="_blank"><img src="./imagenes/weatherChannel.jpg" alt="clima"></a></div>
+          
+          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><img src="./imagenes/fondo.jpg" alt="clima"></div>
+          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><img src="./imagenes/fondo.jpg" alt="clima"></div>
+
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-12">
+            <p>¡Hacé click en las fotos y accedé a mis proyectos!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="acercaDeMi" class="estilo1">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <h3>Acerca de mi: </h3>
+          </div>
+          <div class="col-sm-8 col-lg-8">
+            <p id="textoIzquierda">Actualmente, estoy cursando el curso introductorio del bootcamp de Plataforma 5,
+              diseño
+              UX/UI en codoAcodo y diseño industrial en la UBA. El objetivo es ser diseñadora y desarrolladora web,
+              aprendiendo todo lo que pueda en el camino.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="contactoForm" class="estilo2">
+        <h1>¡Contactame!</h1>
+        <p>Llená estos datos y me contactaré en brevedad.</p>
+        <form action="https://formspree.io/f/mwkyqyog" method="POST">
+          <div class="mb-3">
+            <label for="ingresarNombre" class="form-label">Nombre</label>
+            <input type="text" name="Nombre" class="form-control" id="ingresarNombre" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="ingresarEmail" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="ingresarEmail" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="ingresarCel" class="form-label">Número de celular</label>
+            <input type="number" name="celular" class="form-control" id="ingresarCel">
+          </div>
+          <div class="mb-3">
+            <label for="ingresaComentario" class="form-label">Si querés decirme algo más, ¡Escribilo acá!</label>
+            <textarea name="comentarios" id="ingresaComentario" cols="30" rows="6" class="form-control"
+              aria-describedby="emailHelp"></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-success">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="estilo1">
+        <div class="row">
+          <div class="col-sm-12 col-lg-12">
+            <p class="text-center mb-0">Copyright © portfolioIaraPou 20-3</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
