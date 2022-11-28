@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Portfolio Iara Pou</title>
   <link rel="shortcut icon" href="./imagenes/1651793966.ico">
-  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/estiloPortfolio.css">
 
@@ -41,26 +41,31 @@
       <div id="encabezado" class="estilo1 text-center">
         <img id="miFoto" src="./imagenes/fotoPrevisoria.jpg" alt="foto mía">
         <h1>Iara Pou</h1>
-        <h3>Diseñadora gráfica y desarrolladora front-end <br><i>(en proceso)</i></h3>
+        <h3 class="col-9 mx-auto">Desarrolladora Full-stack junior, estudiante de diseño de interfaz y UX/UI</h3>
       </div>
     </header>
     <main>
       <div id="portfolio" class="estilo2">
         <div class="row">
-          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><a href="https://integrador-codoacodo-iara-pou.netlify.app/"
-            target="_blank"><img src="./imagenes/codoAcodo.jpg" alt="codo a codo integrador"></a></div>
-          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><a href="https://color-game-iara.netlify.app"
-              target="_blank"><img src="./imagenes/colorGame.jpg" alt="color game"></a></div>
-          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><a href="https://to-do-list-iara.netlify.app"
-              target="_blank"><img src="./imagenes/toDoList.jpg" alt="to do list"></a></div>
-          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><a href="https://weather-channel-iara.netlify.app"
-              target="_blank"><img src="./imagenes/weatherChannel.jpg" alt="clima"></a></div>
-          <div class="col-sm-4 col-lg-4 rounded mx-auto d-block"><a href="https://iara-pou.github.io/juego-simon-dice/"
-            target="_blank"><img src="./imagenes/screenSimonDice.png" alt="clima"></a></div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a
+              href="https://iara-pou.github.io/entrega-integrador-cAc/" target="_blank"><img
+                src="./imagenes/codoAcodo.jpg" alt="screenshot de integrador codoAcodo"></a></div>
+          <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a href="https://iara-pou.github.io/color-game"
+              target="_blank"><img src="./imagenes/colorGame.jpg" alt="screenshot de color game"></a></div>
+          <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a
+              href="https://iara-pou.github.io/to-do-list/" target="_blank"><img src="./imagenes/toDoList.jpg"
+                alt="screenshot de to do list"></a></div>
+          <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a
+              href="https://weather-channel-iara.netlify.app" target="_blank"><img src="./imagenes/weatherChannel.jpg"
+                alt="screenshot de app clima"></a></div>
+          <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a
+              href="https://iara-pou.github.io/juego-simon-dice/" target="_blank"><img
+                src="./imagenes/screenSimonDice.png" alt="screenshot de simon dice"></a></div>
 
         </div>
         <div class="row">
-          <div class="col-sm-12 col-lg-12">
+          <div class="col-12">
             <p>¡Hacé click en las fotos y accedé a mis proyectos!</p>
           </div>
         </div>
@@ -68,14 +73,13 @@
 
       <div id="acercaDeMi" class="estilo1">
         <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <h3>Acerca de mi: </h3>
+          <div class="col-3">
+            <h3>Acerca de mi:</h3>
           </div>
           <div class="col-sm-8 col-lg-8">
-            <p id="textoIzquierda">Actualmente, estoy cursando el curso introductorio del bootcamp de Plataforma 5,
-              diseño
-              UX/UI en codoAcodo y diseño industrial en la UBA. El objetivo es ser diseñadora y desarrolladora web,
-              aprendiendo todo lo que pueda en el camino.
+            <p id="textoIzquierda">Actualmente, estoy cursando desarrolo Full-stack en codoAcodo y front-end en Oracle
+              Next Education. Busco ser desarrolladora web y diseñadora de interfaz, aprendiendo todo lo que pueda de
+              las empresas donde trabaje y mis compañeros.
             </p>
           </div>
         </div>
@@ -83,7 +87,7 @@
 
       <div id="contactoForm" class="estilo2">
         <h1>¡Contactame!</h1>
-        <p>Llená estos datos y me contactaré en brevedad.</p>
+        <h3>Si estás interesado en que trabajemos juntos, por favor, llená estos datos y responderé en brevedad.</h3>
         <form action="https://formspree.io/f/mwkyqyog" method="POST">
           <div class="mb-3">
             <label for="ingresarNombre" class="form-label">Nombre</label>
@@ -98,7 +102,7 @@
             <input type="number" name="celular" class="form-control" id="ingresarCel">
           </div>
           <div class="mb-3">
-            <label for="ingresaComentario" class="form-label">Si querés decirme algo más, ¡Escribilo acá!</label>
+            <label for="ingresaComentario" class="form-label">Si querés decir algo más, ¡Escribilo acá!</label>
             <textarea name="comentarios" id="ingresaComentario" cols="30" rows="6" class="form-control"
               aria-describedby="emailHelp"></textarea>
           </div>
