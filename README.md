@@ -1,3 +1,2 @@
 # portfolio
-mi portfolio personal (en revisión)
-link del sitio en netlify: https://portfolio-iara-pou.netlify.app/
+mi portfolio personal, con todos mis proyectos más importantes linkeados.
