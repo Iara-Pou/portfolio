@@ -26,15 +26,15 @@ function validarEmail(email) {
 };
 
 function validarMensaje(mensaje) {
-    
+
     mensaje = _.deburr(mensaje);
 
     if (mensaje.length === 0) {
         return "No ingresaste nada."
     }
 
-    if (mensaje.length >= 300) {
-        return "Tu mensaje no debe contener más que 300 carácteres."
+    if (mensaje.length >= 400) {
+        return "Tu mensaje no debe contener más que 400 carácteres."
     }
 
     if (!/^[A-z0-9,\.\s¿?¡!]+$/.test(mensaje)) {
