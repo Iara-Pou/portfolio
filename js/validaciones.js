@@ -7,11 +7,11 @@ function validarNombre(nombre) {
     }
 
     if (nombre.length > 20) {
-        return 'Este campo debe tener menos de 20 caracteres';
+        return 'Este campo debe tener menos de 20 caracteres.';
     }
 
     if (!/^[A-z]+$/.test(nombre)) {
-        return "Este campo debe tener solo letras";
+        return "Este campo debe tener solo letras.";
     }
 
     return "";
