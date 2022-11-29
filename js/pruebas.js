@@ -6,6 +6,7 @@ function probarValidacionesEmail() {
         "Validar mail no está aceptando un caso válido.");
 }
 
+
 function probarValidacionesNombre() {
 
     console.assert(validarNombre("") === "Este campo debe tener al menos 1 caracter.",
@@ -23,6 +24,8 @@ function probarValidacionesNombre() {
         "Validar nombre no funcionó con un caso válido.");
 
 }
+
+
 function probarValidacionesMensaje() {
 
     console.assert(validarMensaje("") === "No ingresaste nada.",
@@ -34,7 +37,7 @@ function probarValidacionesMensaje() {
     console.assert(validarMensaje("hola! como estás?()(//-") === "Tu mensaje debe contener solo números, letras, espacios, puntos, comas, signos de exclamación o interrogación.",
         "Validar mensajes no validó que el mensaje tenga solo números, letras, espacios, puntos, comas, signos de exclamación o interrogación");
 
-    console.assert(validarMensaje("hola! como estás?") === "",
+    console.assert(validarMensaje("hola! cómo estás?") === "",
         "Validar mensajes no validó un mensaje correcto.");
 }
 
