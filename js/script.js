@@ -6,3 +6,13 @@ $botonEnvio.onclick = function validarDatos(){
     const email = document.querySelector("#email").value;
     const comentario = document.querySelector("#comentario").value;
 
+    const errores = {
+        nombre : validarNombre(nombre), 
+        email : validarEmail(email),
+        mensaje : validarMensaje(comentario)
+    }
+
+    console.log(errores)
+
+    return false;
+}
