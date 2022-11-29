@@ -30,11 +30,11 @@ function validarMensaje(mensaje) {
     }
 
     if (mensaje.length === 0) {
-        return "No ingresaste un mensaje."
+        return "No ingresaste nada."
     }
 
-    if (!/^[A-z0-9]+$/.test(mensaje)) {
-        return "Tu pedido debe contener solo números y letras"
+    if (!/^[A-z0-9,.\s¿?¡!]+$/.test(mensaje)) {
+        return "Tu mensaje debe contener solo números, letras, espacios, puntos, comas, signos de exclamación o interrogación."
     }
 
     return "";
