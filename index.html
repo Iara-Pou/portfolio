@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <title>Portfolio Iara Pou</title>
   <link rel="shortcut icon" href="./imagenes/1651793966.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/estiloPortfolio.css">
 
@@ -51,8 +52,9 @@
           <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a
               href="https://iara-pou.github.io/entrega-integrador-cAc/" target="_blank"><img
                 src="./imagenes/codoAcodo.jpg" alt="screenshot de integrador codoAcodo"></a></div>
-          <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a href="https://iara-pou.github.io/color-game"
-              target="_blank"><img src="./imagenes/colorGame.jpg" alt="screenshot de color game"></a></div>
+          <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a
+              href="https://iara-pou.github.io/color-game" target="_blank"><img src="./imagenes/colorGame.jpg"
+                alt="screenshot de color game"></a></div>
           <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a
               href="https://iara-pou.github.io/to-do-list/" target="_blank"><img src="./imagenes/toDoList.jpg"
                 alt="screenshot de to do list"></a></div>
@@ -88,20 +90,25 @@
       <div id="contactoForm" class="estilo2">
         <h1>¡Contactame!</h1>
         <h3>Si estás interesado en que trabajemos juntos, por favor, llená estos datos y responderé en brevedad.</h3>
+        
         <form action="https://formspree.io/f/mwkyqyog" method="POST">
-          <div class="mb-3">
-            <label for="ingresarNombre" class="form-label">Nombre</label>
-            <input type="text" name="nombre" class="form-control" id="ingresarNombre" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="ingresarEmail" class="form-label">Email</label>
-            <input type="email" name="email" class="form-control" id="ingresarEmail" aria-describedby="emailHelp">
+          <div class="row">
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <label for="ingresarNombre" class="form-label">Nombre</label>
+              <input type="text" name="nombre" class="form-control" id="ingresarNombre" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 col-sm-12 col-lg-6">
+              <label for="ingresarEmail" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" id="ingresarEmail" aria-describedby="emailHelp">
+            </div>
           </div>
           <div class="mb-3">
             <label for="ingresaComentario" class="form-label">Si querés decir algo más, ¡Escribilo acá!</label>
             <textarea name="comentarios" id="ingresaComentario" cols="30" rows="6" class="form-control"
-              aria-describedby="emailHelp"></textarea>
+              aria-describedby="emailHelp"> </textarea>
           </div>
+
+
           <button type="submit" class="btn btn-outline-success">Enviar</button>
         </form>
       </div>
