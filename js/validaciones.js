@@ -1,4 +1,7 @@
 function validarNombre(nombre) {
+
+    nombre = _.deburr(nombre);
+
     if (nombre.length === 0) {
         return 'Este campo debe tener al menos 1 caracter.';
     }
@@ -23,6 +26,8 @@ function validarEmail(email) {
 };
 
 function validarMensaje(mensaje) {
+    
+    mensaje = _.deburr(mensaje);
 
     if (mensaje.length === 0) {
         return "No ingresaste nada."
@@ -32,7 +37,7 @@ function validarMensaje(mensaje) {
         return "Tu mensaje no debe contener más que 300 carácteres."
     }
 
-    if (!/^[A-z0-9,.\s¿?¡!]+$/.test(mensaje)) {
+    if (!/^[A-z0-9,\.\s¿?¡!]+$/.test(mensaje)) {
         return "Tu mensaje debe contener solo números, letras, espacios, puntos, comas, signos de exclamación o interrogación."
     }
 
