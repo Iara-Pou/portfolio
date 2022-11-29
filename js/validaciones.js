@@ -1,11 +1,3 @@
-function validarEmail(email) {
-    if(! /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
-        return "No ingresaste un email válido."
-    }
-
-    return "";
-};
-
 function validarNombre(nombre) {
     if (nombre.length === 0) {
         return 'Este campo debe tener al menos 1 caracter.';
@@ -21,6 +13,14 @@ function validarNombre(nombre) {
 
     return "";
 }
+
+function validarEmail(email) {
+    if(! /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
+        return "No ingresaste un email válido."
+    }
+
+    return "";
+};
 
 function validarMensaje(mensaje) {
 
