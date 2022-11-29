@@ -12,11 +12,11 @@ function probarValidacionesNombre() {
     console.assert(validarNombre("") === "Este campo debe tener al menos 1 caracter.",
         "Validar nombre no validó que el nombre no sea vacío");
 
-    console.assert(validarNombre("aaaaaaaaaaaaaaaaaaaaaaaa") === "Este campo debe tener menos de 20 caracteres",
+    console.assert(validarNombre("aaaaaaaaaaaaaaaaaaaaaaaa") === "Este campo debe tener menos de 20 caracteres.",
         "Validar nombre no validó que el nombre tenga menos que 20 carácteres")
 
     console.assert(
-        validarNombre('1111111111111111') === "Este campo debe tener solo letras",
+        validarNombre('1111111111111111') === "Este campo debe tener solo letras.",
         "Validar nombre no validó que el nombre tenga solo letras",
     );
 
