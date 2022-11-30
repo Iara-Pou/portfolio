@@ -20,9 +20,9 @@ $botonEnvio.onclick = function validarDatos(){
 
         $formulario.classList.add("oculto");
         $contenedorErrores.classList.add("oculto");
-        
+
         document.querySelector("#mensaje-exito").classList.remove("oculto");
-        //enviar form
+        enviarForm();
     
     }
 
@@ -61,3 +61,10 @@ function borrarErroresAnteriores(){
     let $contenedorErrores = document.querySelector("#errores");
     $contenedorErrores.textContent = "";
 }
+
+function enviarForm(){
+    setTimeout(()=> {
+        $formulario.submit();
+    } ,3000)
+}
+
