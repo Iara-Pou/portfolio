@@ -2,7 +2,7 @@ function validarNombre(nombre) {
 
     nombre = _.deburr(nombre);
 
-    if (nombre.length === 0) {
+    if (nombre.trim().length === 0) {
         return 'Este campo debe tener al menos 1 caracter.';
     }
 
@@ -29,7 +29,7 @@ function validarComentario(comentario) {
 
     comentario = _.deburr(comentario);
 
-    if (comentario.length === 0) {
+    if (comentario.trim().length === 0) {
         return "No ingresaste nada."
     }
 
