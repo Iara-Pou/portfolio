@@ -1,5 +1,6 @@
 const $formulario = document.querySelector("#formulario");
 const $botonEnvio = document.querySelector("#botonEnviar");
+const $contenedorErrores = document.querySelector("#errores");
 
 $botonEnvio.onclick = function validarDatos(){
     
@@ -18,6 +19,8 @@ $botonEnvio.onclick = function validarDatos(){
     if (esExito) {
 
         $formulario.classList.add("oculto");
+        $contenedorErrores.classList.add("oculto");
+        
         document.querySelector("#mensaje-exito").classList.remove("oculto");
         //enviar form
     
@@ -30,7 +33,6 @@ function manejarErrores(errores) {
 
     borrarErroresAnteriores();
 
-    let $contenedorErrores = document.querySelector("#errores");
     const llaves = Object.keys(errores);
     let contadorErrores = 0;
 
