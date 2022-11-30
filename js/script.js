@@ -32,6 +32,19 @@ function manejarErrores(errores) {
     const llaves = Object.keys(errores);
     let contadorErrores = 0;
 
+    llaves.forEach(llave => {
+        const error = errores[llave];
+        if (error) {
+            contadorErrores++;
+
+            let textoError = document.createElement("p");
+            textoError.textContent = error;
+            $contenedorErrores.appendChild(textoError);
+
+            $contenedorErrores.classList.remove("oculto");
+
+    })
+
     return contadorErrores;
 
 }
