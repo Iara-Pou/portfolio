@@ -25,3 +25,10 @@ $botonEnvio.onclick = function validarDatos(){
 
     return false;
 }
+
+function manejarErrores(errores) {
+
+    return contadorErrores;
+
+}
+
