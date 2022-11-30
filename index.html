@@ -100,7 +100,6 @@
         <form action="https://formspree.io/f/mwkyqyog" method="POST" id="formulario">
           
           <div class="row">
-
             <div class="mb-3 col-sm-12 col-lg-6">
               <label for="nombre" class="form-label">Nombre</label>
               <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
@@ -109,9 +108,10 @@
               <label for="email" class="form-label">Email</label>
               <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
             </div>
-
-            <label for="comentario" class="form-label col-sm-12">Si querés decir algo más, ¡Escribilo acá!</label>
-            <textarea name="comentario" id="comentario" cols="30" rows="6" class="form-control mb-3" aria-describedby="emailHelp"> </textarea>
+            <div class="col-12">
+              <label for="comentario" class="form-label">Si querés decir algo más, ¡Escribilo acá!</label>
+              <textarea name="comentario" id="comentario" cols="30" rows="6" class="form-control mb-3" aria-describedby="emailHelp"> </textarea>
+            </div>
           </div>
 
           <button type="submit" class="btn btn-outline-success" id="botonEnviar">Enviar</button>
