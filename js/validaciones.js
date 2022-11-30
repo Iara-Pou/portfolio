@@ -30,7 +30,7 @@ function validarComentario(comentario) {
     comentario = _.deburr(comentario);
 
     if (comentario.trim().length === 0) {
-        return "No ingresaste nada."
+        return 'Este campo debe tener al menos 1 caracter.'
     }
 
     if (comentario.length >= 400) {
