@@ -9,7 +9,7 @@ $botonEnvio.onclick = function validarDatos(){
     const errores = {
         nombre : validarNombre(nombre), 
         email : validarEmail(email),
-        mensaje : validarComentario(comentario)
+        comentario : validarComentario(comentario)
     }
 
     console.log(errores)
