@@ -12,7 +12,15 @@ $botonEnvio.onclick = function validarDatos(){
         comentario : validarComentario(comentario)
     }
 
-    console.log(errores)
+    const esExito = manejarErrores(errores) === 0;
+
+    if (esExito) {
+
+        $formulario.classList.add("oculto");
+        document.querySelector("#mensaje-exito").classList.remove("oculto");
+        //enviar form
+
+    }
 
     return false;
 }
