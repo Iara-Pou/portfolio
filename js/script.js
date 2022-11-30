@@ -28,6 +28,8 @@ $botonEnvio.onclick = function validarDatos(){
 
 function manejarErrores(errores) {
 
+    borrarErroresAnteriores();
+
     let $contenedorErrores = document.querySelector("#errores");
     const llaves = Object.keys(errores);
     let contadorErrores = 0;
@@ -53,3 +55,7 @@ function manejarErrores(errores) {
 
 }
 
+function borrarErroresAnteriores(){
+    let $contenedorErrores = document.querySelector("#errores");
+    $contenedorErrores.textContent = "";
+}
