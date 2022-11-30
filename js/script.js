@@ -1,3 +1,4 @@
+const $formulario = document.querySelector("#carta-a-santa");
 const $botonEnvio = document.querySelector("#botonEnviar");
 
 $botonEnvio.onclick = function validarDatos(){
@@ -19,7 +20,7 @@ $botonEnvio.onclick = function validarDatos(){
         $formulario.classList.add("oculto");
         document.querySelector("#mensaje-exito").classList.remove("oculto");
         //enviar form
-
+    
     }
 
     return false;
