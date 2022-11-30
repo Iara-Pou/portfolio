@@ -1,4 +1,4 @@
-const $formulario = document.querySelector("#carta-a-santa");
+const $formulario = document.querySelector("#formulario");
 const $botonEnvio = document.querySelector("#botonEnviar");
 
 $botonEnvio.onclick = function validarDatos(){
