@@ -91,9 +91,13 @@
 
       <div id="contactoForm" class="estilo2">
         <h1>¡Contactame!</h1>
-        <h3>Si estás interesado en que trabajemos juntos, por favor, llená estos datos y responderé en brevedad.</h3>
+        <h3>Si estás interesado en que trabajemos juntos, por favor, llená estos datos:</h3>
         
-        <form action="https://formspree.io/f/mwkyqyog" method="POST" >
+        <div class="alert alert-success oculto" role="alert" id="mensaje-exito">
+          <p>¡Muchas gracias por contactarme! En brevedad me pondré en contacto.</p>
+        </div>
+
+        <form action="https://formspree.io/f/mwkyqyog" method="POST" id="formulario">
           
           <div class="row">
 
@@ -113,6 +117,8 @@
           <button type="submit" class="btn btn-outline-success" id="botonEnviar">Enviar</button>
 
         </form>
+
+        <div class="alert alert-danger oculto" role="alert" id="errores"></div>
 
       </div>
     </main>
