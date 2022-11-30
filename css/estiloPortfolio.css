@@ -41,3 +41,7 @@ h1 {
 #acercaDeMi p {
     text-align: right;
 }
+
+footer i {
+    font-size: 2rem;
+}
