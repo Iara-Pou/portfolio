@@ -2,6 +2,10 @@ const $formulario = document.querySelector("#formulario");
 const $botonEnvio = document.querySelector("#botonEnviar");
 const $contenedorErrores = document.querySelector("#errores");
 
+window.onbeforeunload = () => {
+    $formulario.reset();
+}
+
 $botonEnvio.onclick = function validarDatos(){
     
     const nombre = document.querySelector("#nombre").value;
