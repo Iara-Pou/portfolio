@@ -6,6 +6,7 @@ window.onbeforeunload = () => {
     $formulario.reset();
 }
 
+
 $botonEnvio.onclick = function validarDatos(){
     
     const nombre = document.querySelector("#nombre").value;
@@ -71,4 +72,3 @@ function enviarFormulario(){
         $formulario.submit();
     } ,3000)
 }
-
