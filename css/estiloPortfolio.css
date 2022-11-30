@@ -3,19 +3,12 @@ body {
     font-family: 'Fredoka', sans-serif;
 }
 
-h1 {
-    font-weight: bold;
+header h1 {
     letter-spacing: 3px;
-    text-transform: uppercase;
 }
 
 .estilo1 {
     background-color: #68A357;
-    padding: 40px;
-}
-
-.estilo2 {
-    background-color: white;
     padding: 40px;
 }
 
@@ -30,20 +23,17 @@ h1 {
     border: 3px solid #68A357;
     margin: 10px auto;
     width: 100%;
-    height: auto;
 }
 
 #portfolio {
-    text-align: center;
     padding: 30px;
-}
-
-#acercaDeMi p {
-    text-align: right;
 }
 
 footer i {
     font-size: 2rem;
+}
+footer i:hover{
+    filter: brightness(0);
 }
 
 .oculto{
