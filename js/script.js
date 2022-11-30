@@ -36,6 +36,7 @@ function manejarErrores(errores) {
         const error = errores[llave];
         if (error) {
             contadorErrores++;
+            $formulario[llave].classList.add("error");
 
             let textoError = document.createElement("p");
             textoError.textContent = error;
@@ -43,6 +44,9 @@ function manejarErrores(errores) {
 
             $contenedorErrores.classList.remove("oculto");
 
+        } else {
+            $formulario[llave].classList.remove("error");
+        }
     })
 
     return contadorErrores;
