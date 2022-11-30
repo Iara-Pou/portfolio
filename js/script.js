@@ -26,7 +26,7 @@ $botonEnvio.onclick = function validarDatos(){
         $contenedorErrores.classList.add("oculto");
 
         document.querySelector("#mensaje-exito").classList.remove("oculto");
-        enviarForm();
+        enviarFormulario();
     
     }
 
@@ -66,7 +66,7 @@ function borrarErroresAnteriores(){
     $contenedorErrores.textContent = "";
 }
 
-function enviarForm(){
+function enviarFormulario(){
     setTimeout(()=> {
         $formulario.submit();
     } ,3000)
