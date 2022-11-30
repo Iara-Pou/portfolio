@@ -1,4 +1,11 @@
+const $formulario = document.querySelector("#formulario");
 const $botonEnvio = document.querySelector("#botonEnviar");
+const $contenedorErrores = document.querySelector("#errores");
+
+window.onbeforeunload = () => {
+    $formulario.reset();
+}
+
 
 $botonEnvio.onclick = function validarDatos(){
     
@@ -9,10 +16,59 @@ $botonEnvio.onclick = function validarDatos(){
     const errores = {
         nombre : validarNombre(nombre), 
         email : validarEmail(email),
-        mensaje : validarMensaje(comentario)
+        comentario : validarComentario(comentario)
     }
 
-    console.log(errores)
+    const esExito = manejarErrores(errores) === 0;
+
+    if (esExito) {
+
+        $formulario.classList.add("oculto");
+        $contenedorErrores.classList.add("oculto");
+
+        document.querySelector("#mensaje-exito").classList.remove("oculto");
+        enviarFormulario();
+    
+    }
 
     return false;
+}
+
+function manejarErrores(errores) {
+
+    borrarErroresAnteriores();
+
+    const llaves = Object.keys(errores);
+    let contadorErrores = 0;
+
+    llaves.forEach(llave => {
+        const error = errores[llave];
+        if (error) {
+            contadorErrores++;
+            $formulario[llave].classList.add("error");
+
+            let textoError = document.createElement("p");
+            textoError.textContent = error;
+            $contenedorErrores.appendChild(textoError);
+
+            $contenedorErrores.classList.remove("oculto");
+
+        } else {
+            $formulario[llave].classList.remove("error");
+        }
+    })
+
+    return contadorErrores;
+
+}
+
+function borrarErroresAnteriores(){
+    let $contenedorErrores = document.querySelector("#errores");
+    $contenedorErrores.textContent = "";
+}
+
+function enviarFormulario(){
+    setTimeout(()=> {
+        $formulario.submit();
+    } ,3000)
 }

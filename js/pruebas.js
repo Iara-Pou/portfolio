@@ -26,21 +26,21 @@ function probarValidacionesNombre() {
 }
 
 
-function probarValidacionesMensaje() {
+function probarValidacionesComentario() {
 
-    console.assert(validarMensaje("") === "No ingresaste nada.",
+    console.assert(validarComentario("") === "Este campo debe tener al menos 1 caracter.",
         "Validar mensajes no validó que no sea un string vacío");
 
-    console.assert(validarMensaje("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa") === "Tu mensaje no debe contener más que 400 carácteres.",
+    console.assert(validarComentario("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa") === "Tu mensaje no debe contener más que 400 carácteres.",
         "Validar mensajes no validó que el mensaje tenga menos de 400 carácteres");
 
-    console.assert(validarMensaje("hola! como estás?()(//-") === "Tu mensaje debe contener solo números, letras, espacios, puntos, comas, signos de exclamación o interrogación.",
+    console.assert(validarComentario("hola! como estás?()(//-") === "Tu mensaje debe contener solo números, letras, espacios, puntos, comas, signos de exclamación o interrogación.",
         "Validar mensajes no validó que el mensaje tenga solo números, letras, espacios, puntos, comas, signos de exclamación o interrogación");
 
-    console.assert(validarMensaje("hola! cómo estás?") === "",
+    console.assert(validarComentario("hola! cómo estás?") === "",
         "Validar mensajes no validó un mensaje correcto.");
 }
 
-probarValidacionesMensaje();
+probarValidacionesComentario();
 probarValidacionesEmail();
 probarValidacionesNombre();

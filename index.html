@@ -42,15 +42,14 @@
     <header>
       <div id="encabezado" class="estilo1 text-center">
         <img id="miFoto" src="./imagenes/fotoPrevisoria.jpg" alt="foto mía">
-        <h1>Iara Pou</h1>
+        <h1 class="text-uppercase fw-bold">Iara Pou</h1>
         <h3 class="col-9 mx-auto">Desarrolladora Full-stack junior, estudiante de diseño de interfaz y UX/UI</h3>
       </div>
     </header>
 
     <main>
-      <div id="portfolio" class="estilo2">
+      <div id="portfolio" class="bg-white px-5 text-center">
         <div class="row">
-
           <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a
               href="https://iara-pou.github.io/entrega-integrador-cAc/" target="_blank"><img
                 src="./imagenes/codoAcodo.jpg" alt="screenshot de integrador codoAcodo"></a></div>
@@ -66,12 +65,10 @@
           <div class="col-sm-12 col-md-6 col-lg-4 rounded mx-auto d-block"><a
               href="https://iara-pou.github.io/juego-simon-dice/" target="_blank"><img
                 src="./imagenes/screenSimonDice.png" alt="screenshot de simon dice"></a></div>
-
         </div>
-        <div class="row">
-          <div class="col-12">
+
+        <div class="row mt-3">      
             <p>¡Hacé click en las fotos y accedé a mis proyectos!</p>
-          </div>
         </div>
       </div>
 
@@ -81,39 +78,44 @@
             <h3>Acerca de mi:</h3>
           </div>
           <div class="col-sm-8 col-lg-8">
-            <p id="textoIzquierda">Actualmente, estoy cursando desarrolo Full-stack en codoAcodo y front-end en Oracle
+            <p class="text-end">Actualmente, estoy cursando desarrolo Full-stack en codoAcodo y front-end en Oracle
               Next Education. Busco ser desarrolladora web y diseñadora de interfaz, aprendiendo todo lo que pueda de
-              las empresas donde trabaje y mis compañeros.
-            </p>
+              las empresas donde trabaje y mis compañeros.</p>
           </div>
         </div>
       </div>
 
-      <div id="contactoForm" class="estilo2">
+      <div id="contactoForm" class="bg-white p-5">
         <h1>¡Contactame!</h1>
-        <h3>Si estás interesado en que trabajemos juntos, por favor, llená estos datos y responderé en brevedad.</h3>
+        <h3>Si estás interesado en que trabajemos juntos, por favor, llená estos datos:</h3>
         
-        <form action="https://formspree.io/f/mwkyqyog" method="POST">
+        <div class="alert alert-success mt-3 oculto" role="alert" id="mensaje-exito">
+          <p>¡Muchas gracias por contactarme! En brevedad me pondré en contacto.</p>
+        </div>
+
+        <form action="https://formspree.io/f/mwkyqyog" method="POST" id="formulario">
           
           <div class="row">
             <div class="mb-3 col-sm-12 col-lg-6">
-              <label for="ingresarNombre" class="form-label">Nombre</label>
+              <label for="nombre" class="form-label">Nombre</label>
               <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
             </div>
             <div class="mb-3 col-sm-12 col-lg-6">
-              <label for="ingresarEmail" class="form-label">Email</label>
+              <label for="email" class="form-label">Email</label>
               <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
             </div>
-          </div>
+            <div class="col-12">
+              <label for="comentario" class="form-label">Si querés decir algo más, ¡Escribilo acá!</label>
+              <textarea name="comentario" id="comentario" cols="30" rows="6" class="form-control mb-3" aria-describedby="emailHelp"> </textarea>
+            </div>
 
-          <div class="mb-3">
-            <label for="ingresaComentario" class="form-label">Si querés decir algo más, ¡Escribilo acá!</label>
-            <textarea name="comentario" id="comentario" cols="30" rows="6" class="form-control" aria-describedby="emailHelp"> </textarea>
           </div>
 
           <button type="submit" class="btn btn-outline-success" id="botonEnviar">Enviar</button>
 
         </form>
+
+        <div class="alert alert-danger oculto mt-3" role="alert" id="errores"></div>
 
       </div>
     </main>

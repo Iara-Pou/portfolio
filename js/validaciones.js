@@ -2,7 +2,7 @@ function validarNombre(nombre) {
 
     nombre = _.deburr(nombre);
 
-    if (nombre.length === 0) {
+    if (nombre.trim().length === 0) {
         return 'Este campo debe tener al menos 1 caracter.';
     }
 
@@ -25,19 +25,19 @@ function validarEmail(email) {
     return "";
 };
 
-function validarMensaje(mensaje) {
+function validarComentario(comentario) {
 
-    mensaje = _.deburr(mensaje);
+    comentario = _.deburr(comentario);
 
-    if (mensaje.length === 0) {
-        return "No ingresaste nada."
+    if (comentario.trim().length === 0) {
+        return 'Este campo debe tener al menos 1 caracter.'
     }
 
-    if (mensaje.length >= 400) {
+    if (comentario.length >= 400) {
         return "Tu mensaje no debe contener más que 400 carácteres."
     }
 
-    if (!/^[A-z0-9,\.\s¿?¡!]+$/.test(mensaje)) {
+    if (!/^[A-z0-9,\.\s¿?¡!]+$/.test(comentario)) {
         return "Tu mensaje debe contener solo números, letras, espacios, puntos, comas, signos de exclamación o interrogación."
     }
 
