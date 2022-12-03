@@ -49,8 +49,8 @@ function manejarErrores(errores) {
 
             let textoError = document.createElement("p");
             textoError.textContent = error;
-            $contenedorErrores.appendChild(textoError);
 
+            $contenedorErrores.appendChild(textoError);
             $contenedorErrores.classList.remove("oculto");
 
         } else {
