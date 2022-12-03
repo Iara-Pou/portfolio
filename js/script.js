@@ -35,6 +35,7 @@ $botonEnvio.onclick = function validarDatos(){
 }
 
 function manejarErrores(errores) {
+    borrarErroresAnteriores();
     const llaves = Object.keys(errores);
     let contadorErrores = 0;
 
@@ -64,4 +65,8 @@ function enviarFormulario(){
     setTimeout(()=> {
         $formulario.submit();
     } ,2000)
+}
+
+function borrarErroresAnteriores(){
+    document.querySelectorAll(".form-text").forEach(texto => texto.remove())
 }
