@@ -63,7 +63,7 @@ function manejarErrores(errores) {
 function enviarFormulario(){
     setTimeout(()=> {
         $formulario.submit();
-    }, 3000)
+    }, 2000)
 }
 
 function borrarErroresAnteriores(){
