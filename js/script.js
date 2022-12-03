@@ -24,9 +24,8 @@ $botonEnvio.onclick = function validarDatos(){
     if (esExito) {
 
         $formulario.classList.add("oculto");
-        $contenedorErrores.classList.add("oculto");
-
         document.querySelector("#mensaje-exito").classList.remove("oculto");
+
         enviarFormulario();
     
     }
