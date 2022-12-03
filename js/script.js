@@ -70,5 +70,5 @@ function borrarErroresAnteriores(){
 function enviarFormulario(){
     setTimeout(()=> {
         $formulario.submit();
-    } ,3000)
+    } ,2000)
 }
