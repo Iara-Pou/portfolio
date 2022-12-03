@@ -35,9 +35,6 @@ $botonEnvio.onclick = function validarDatos(){
 }
 
 function manejarErrores(errores) {
-
-    borrarErroresAnteriores();
-
     const llaves = Object.keys(errores);
     let contadorErrores = 0;
 
@@ -54,17 +51,13 @@ function manejarErrores(errores) {
 
         } else {
             $formulario[llave].classList.remove("error");
+            //si formulario[llave] no tiene clase error, sacarle el mensaje. un if usando includes. que el elemento que le sigue sea eliminado formulario[llave].p
             document.querySelectorAll(".form-text").forEach(texto => texto.remove())
         }
     })
 
     return contadorErrores;
 
-}
-
-function borrarErroresAnteriores(){
-    let $contenedorErrores = document.querySelector("#errores");
-    $contenedorErrores.textContent = "";
 }
 
 function enviarFormulario(){
