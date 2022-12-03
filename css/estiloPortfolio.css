@@ -9,18 +9,14 @@ body {
 
 #miFoto {
     border-radius: 50%;
-    height: 250px;
-    margin: 40px auto;
+    height: 15.62em;
+    margin: 2.5em auto;
 }
 
 #portfolio img {
-    border-radius: 15px;
-    border: 3px solid #68A357;
+    border-radius: 1.5em;
+    border: 0.25em solid #68A357;
     width: 100%;
-}
-
-#portfolio {
-    padding: 30px;
 }
 
 footer i {
@@ -35,5 +31,5 @@ footer i:hover{
 }
 
 .error{
-    border: 2px solid red;
+    border: 0.15em solid red;
 }
