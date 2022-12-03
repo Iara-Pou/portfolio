@@ -49,12 +49,12 @@ function manejarErrores(errores) {
 
             let textoError = document.createElement("p");
             textoError.textContent = error;
-
-            $contenedorErrores.appendChild(textoError);
-            $contenedorErrores.classList.remove("oculto");
+            textoError.classList = "form-text text-danger"
+            $formulario[llave].after(textoError);
 
         } else {
             $formulario[llave].classList.remove("error");
+            document.querySelectorAll(".form-text").forEach(texto => texto.remove())
         }
     })
 
