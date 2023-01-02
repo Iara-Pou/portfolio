@@ -19,6 +19,7 @@ body {
     width: 100%;
     transition: border 0.2s;
 }
+
 #portfolio img:hover{
     border-color: black;
 }
