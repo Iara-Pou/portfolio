@@ -17,10 +17,16 @@ body {
     border-radius: 1.5em;
     border: 0.25em solid #68A357;
     width: 100%;
+    transition: border 0.2s;
+}
+
+#portfolio img:hover{
+    border-color: black;
 }
 
 footer i {
     font-size: 2rem;
+    transition: filter 0.2s;
 }
 footer i:hover{
     filter: brightness(0);
